@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>adivina un numero</h1>
+        <p>adivina un numero entre 1 y 100 tienes, 10 intentos</p>
+        <form>
+            <label for="numberOne">
+                Escribe un numero
+            </label>
+            <input id="numberOne" type="number">
+            <button type="button" onclick=" result()" id="button">Enviar respuesta</button>
+            <div class="result">
+            <p id="intentos">numeros usados:</p>
+            <p id="resultado"></p>
+            <p id="mensaje"></p>
+        </div>
+        </form>
+    </section>
+    
+    <script src="./assets/index.js"></script>
+</body>
+</html>
