@@ -2,4 +2,10 @@
 
 - Adivina un numero
 - app de clima
-- bateria
+
+
+# 30 Days Of JavaScript
+
+- day 01 Battery
+
+- day 02 Clock
