@@ -11,3 +11,5 @@
 - day 02 Reloj
 
 - day 03 Manipulacion de Estilos desde Js
+
+- day 04 Manejo de Arrays Method
