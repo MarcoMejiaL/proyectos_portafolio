@@ -6,3 +6,4 @@ function update (){
      document.documentElement.style.setProperty(`--${this.name}`,this.value + sufix)
 }
 inputs.forEach(input => input.addEventListener('change', update));
+inputs.forEach(input => input.addEventListener('mousemove', update));
