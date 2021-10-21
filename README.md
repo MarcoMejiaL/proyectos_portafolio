@@ -6,6 +6,8 @@
 
 # 30 Days Of JavaScript
 
-- day 01 Battery
+- day 01 Bateria
 
-- day 02 Clock
+- day 02 Reloj
+
+- day 03 Manipulacion de Estilos desde Js
