@@ -10,6 +10,8 @@
 
 - day 02 Reloj
 
-- day 03 Manipulacion de Estilos desde Js
+- day 03 Manipulacion de Estilos desde Js 01
 
 - day 04 Manejo de Arrays Method
+
+- day 05 Manipulacion de Estilos desde Js 02 flex panel gallery
