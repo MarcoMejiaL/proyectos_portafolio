@@ -15,3 +15,5 @@
 - day 04 Manejo de Arrays Method
 
 - day 05 Manipulacion de Estilos desde Js 02 flex panel gallery
+
+- day 06 Buscador
