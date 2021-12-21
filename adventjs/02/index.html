@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const carta = 'bici coche balón _playstation bici coche peluche'
+
+
+        function listGifts(letter) {
+            let giftList = letter.split(' ');
+            const resultObject = [];
+            let currentElement = ''
+            let counter =0
+
+            giftList.map(gift =>{
+                currentElement = gift
+                counter =0
+
+                if(!currentElement.includes('_') && !!currentElement){
+                giftList.map(giftIterator =>{
+                    if(currentElement === giftIterator){
+                        counter +=1
+                    }
+                    resultObject[`${currentElement}`] = counter
+
+                })
+            }
+            })
+
+            
+ 
+ return resultObject
+}
+
+    const regalos = listGifts(carta)
+    console.log(regalos);
+
+
+    </script>
+</body>
+</html>
