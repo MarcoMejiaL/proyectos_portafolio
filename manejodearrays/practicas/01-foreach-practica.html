@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    li{
+        list-style: none;
+    }
+</style>
+<body>
+    <h1>lista de tareas</h1>
+    <div id="app"></div>
+    <script>
+        const listaTareas = [
+        {name:'lavar la ropa', hour:'sabado 21'},
+        {name:'lavar los trastes', hour:'viernes 20'},
+        {name:'estudiar', hour:'sabado 21'}
+
+        ];
+        const app = document.querySelector('div#app')
+        console.log(app);
+           listaTareas.forEach(item =>{
+               app.innerHTML += `<li><label for=""><input type="checkbox">${item.name}</label></li>`
+           }) 
+
+           
+    </script>
+    
+</body>
+</html>
