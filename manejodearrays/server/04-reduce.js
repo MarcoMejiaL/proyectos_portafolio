@@ -9,3 +9,4 @@ function solution(datos){
 console.log(reducir); */
 console.log(solution(totals));
 console.log(totals);
+
