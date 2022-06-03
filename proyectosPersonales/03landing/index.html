@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://kit.fontawesome.com/da6eae2266.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -15,9 +16,15 @@
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
-
+    
     <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:sans-serif;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -25,26 +32,207 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      main{
+      body{
+        height: 100vh;
+        
+        background-color: #674BB1;
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        
+        background-position: center center;
+        background-size:cover;
+        
+      }
+      .header{
+        padding: 12px;
+        margin-bottom: 12px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+      }
+      .header img{
+        width: 200px;
+        
+      }
+
+      .container__section{
+        padding: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .imagen{
+        width: 750px;
+        height: auto;
+        
+        padding: 12px;
+        margin-right: 34px;
+      }
+      .imagen img{
+        width: auto;
+        height: 400px;
+      }
+
+      .content{
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 12px;
+        height: 400px;
+        
+        width: 70%;
+        color: white;
+      }
+      .content h1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        height: auto;
+        width: auto;
+      }
+      .content p{
+        font-size: 18px;
+        font-weight:400;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        height: auto;
+        width: auto;
+      }
+      .btn1{
+        padding: 12px;
+        width: 200px;
+        border-radius: 18px;
+        border: none;
+        color: hsl(228, 45%, 44%);
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgb(7 7 7 / 50%);
+      }
+      .btn1:hover{
+        background-color: antiquewhite;
+        transition: all 6ms;
+      }
+      footer{
+        
+        height: 80px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      footer ul{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+        margin-right: 24px;
+        
+
+      }
+      footer ul li{
+        list-style: none;
+        text-decoration: none;
+      }
+      footer ul li a{
+        color: white;
+        font-size: 30px;
+        padding: 12px;
+        border-radius: 50%;
+      }
+      footer ul li a:hover{
+        transition: all 6ms;
+
+        background-color: white;
+        color: hsl(228, 45%, 44%);
+      }
+      @media (max-width:941px) {
+        body{      
         background-image: url(./images/bg-mobile.svg);
         
+      }
+        .container__section{
+          flex-direction: column;         
+        }
+        .imagen img{
+          width: 100%;
+          height: auto;
+        }
+        footer{
+          justify-content: center;
+        }
+        .content{
+          height: 100%;
+        }
+        .content h1{
+        font-size: 60px;
+        margin-top: 55PX;
+        
+        
+        
+      }
+      .content p{
+        font-size: 32px;
+      }
+      .btn1{
+        height: 80px;
+        width: 300px;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+        
+      }
+
+      @media (max-width:632px){
+        .imagen{
+          width: 500px;
+        }
+        .imagen img{
+          width: 100%;
+          height: auto;
+        }
+
       }
     </style>
   </head>
   <body>
     <main>
-      <header>
+      <header class="header">
         <img src="./images/logo.svg" alt="logo">
       </header>
-      <section>
-        <div class="imagen"></div>
+      <section class="container__section">
+        <div class="imagen">
+          <img src="./images/illustration-mockups.svg" alt="">
+        </div>
         <div class="content">
-          <h1></h1>
-          <h2></h2>
-          <p></p>
-          <input type="button">
+          <h1>Build the Community<br>
+            Your Fans Will Love</h1>
+          
+          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+          <button class="btn1">Register</button>
         </div>
       </section>
+      <footer>
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a> 
+            
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            
+          </li>
+        </ul>
+
+      </footer>
     </main>
   </body>
 </html>

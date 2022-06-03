@@ -31,16 +31,24 @@ const arreglo = [
     },
 ]
 
-const rta2 = arreglo.filter(item=>{
+/* const rta2 = arreglo.filter(item=>{
     if (item.delivered ==true){
         console.log(item.name);
     }
-})
+}) */
 
 /* console.log(rta2); */
-const search = (query)=>{
+/* const search = (query)=>{
         return arreglo.filter(item=>{
             return item.name.includes(query)
         })
 }
-console.log(search('liza'));
+console.log(search('liza')); */
+
+function respuesta(array){
+    return array.filter((item)=>item.total >= 100 && item.delivered)
+    
+    
+}
+
+console.log(respuesta(arreglo));

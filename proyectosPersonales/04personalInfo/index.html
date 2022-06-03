@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+      
+    }
+    
+    *{
+      margin: 0px;
+      padding: 0px; 
+      box-sizing: border-box;
+    }
+    main{
+      width: 100%;
+      height: 100vh;
+      background: var(--LightGrayishBlue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+    }
+    .main__container{
+      
+      
+      height: auto;
+      width: 1020px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.09);
+      border-radius: 12px;
+      background-color: white;
+      
+      
+    }
+    .side__image{
+      width: auto;
+      height: 100%;
+    }
+    .side__image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+      
+    }
+    .title__container{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .main__title{
+      color: var(--VeryDarkGrayishBlue);
+      margin-bottom: 12px;
+      padding: 6px;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .main__p{
+      font-size: 17px;
+      color: var(--VeryDarkGrayishBlue);
+      font-weight: 500;
+      margin-bottom: 12px;
+      letter-spacing: 3px;
+      padding: 2px;
+
+    }
+    .avatar__container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      
+      padding: 12px;
+      
+      
+    }
+    .name__container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      padding: 12px;
+
+
+    }
+    .avatar{
+      border-radius: 50%;
+      width: 100px;
+      height: auto;
+      object-fit: cover;
+      margin-right: 8px;
+
+    }
+    .name__container h3{  
+      font-size: 16px;
+      color: #666;
+      font-weight: bold;
+      letter-spacing: 1px;
+      
+    }
+    .btn1{
+      border-radius: 50%;
+      background-color: var(--LightGrayishBlue);
+      width: 30px;
+      height: 30px;
+      border: none;
+      margin-right: 41px;
+      
+    }
+    .btn1:hover{
+      background-color: var(--VeryDarkGrayishBlue);
+    }
+    .banner{
+      position: relative;
+        bottom:60px;
+        left: 60px;
+      background-color: orange;
+      width: 200px;
+      height: 50px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+  <section class="main__container">
+    <div class="side__image">
+      <img src="./images/drawers.jpg" alt="">
+    </div>
+    <div class="title__container">
+      <h2 class="main__title">
+        Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h2>
+      <p class="main__p">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      
+        </p>
+        
+      <div class="avatar__container">
+        <div class="name__container">
+        <img class="avatar" class="avatar" src="./images/avatar-michelle.jpg" alt="">
+        
+          <h3>Michelle Appleton <br>
+            <small>Jun 2020</small> </h3>
+        </div>
+        <div class="banner">
+
+        </div>
+        <button class="btn1" onclick="prueba()">
+          <img src="./images/icon-share.svg" alt="">
+        </button>
+        
+      </div>
+
+    </div>
+  </section>  
+  </main>
+
+  
+
+  <script>
+    function prueba(){
+      console.log('bien');
+    }
+  </script>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dr Paquito</a>.
+  </div>
+</body>
+</html>
