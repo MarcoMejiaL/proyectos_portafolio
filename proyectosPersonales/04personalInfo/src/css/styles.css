@@ -1,0 +1,223 @@
+:root{
+    --DarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--LightGrayishBlue);
+    overflow-x: hidden;
+}
+
+ul,li, figure, body{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #FFF;
+    height: 600px;
+    width: 330px;
+    margin: 10vh auto;
+    min-height: 525px;
+    position: relative;
+    font-size: 100%;
+    box-shadow: 0px 6px 38px var(--LightGrayishBlue);
+    border-radius: 15px;
+}
+
+.card__container{
+    width: 100%;
+    height: 40%;
+    min-height: 210px;
+}
+
+.card__container--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px 15px 0 0;
+}
+
+.card__text{
+    width: 85%;
+    margin: 30px auto 30px auto;
+}
+
+.card__text--principal{
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--DarkGrayishBlue);
+}
+
+.card__text--secondary{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--GrayishBlue);
+}
+
+.card__person{
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+}
+
+.card__person--container{ justify-content: initial;}
+
+.card__person--image, .card__person--share{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card__person--information{
+    margin-left: 20px;
+}
+
+.card__person--information .name{
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--DarkGrayishBlue);
+}
+
+.card__person--information .date{
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 12px;
+    color: var(--DesaturatedDarkBlue);
+}
+
+.card__person--share{
+    background-color: var(--LightGrayishBlue);
+
+}
+
+.card__person--share .icon{
+    height: 15px;
+}
+
+.modal{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--DarkGrayishBlue);
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 15px 15px;
+    display: none;
+}
+
+.modal__container{
+    padding-left: 30px;
+    height: 100%;
+    justify-content: initial;
+}
+
+.modal__container--text{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: var(--GrayishBlue);
+}
+
+.modal__container--list{
+    padding: 2px 0 0 10px;
+    list-style: none;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.modal__container--share{
+    position: absolute;
+    right: 30px;
+    background-color: var(--DesaturatedDarkBlue);
+}
+
+.modal__container--share .icon:hover, .card__person--share .icon:hover{
+    cursor: pointer;
+}   
+
+.show{
+    display: block;
+}
+
+/* .triangle{
+    display: none;
+} */
+
+@media screen and (min-width: 1024px){
+    .card{
+        display: flex;
+        min-height: 230px;
+        height: 300px;
+        width: 660px;
+        margin-top: 30vh;
+    }
+
+    .card__container{
+        height: 100%;
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .card__container--img{
+        border-radius: 15px 0 0 15px;
+        object-position: left;
+    }
+
+    .card__text{
+        margin: 10px 20px;
+    }
+
+    .card__person{
+        bottom: 20px;
+        width: 50%;
+    }
+
+    .modal{
+        right: -6%;
+        width: 35%;
+        height: 20%;
+        border-radius: 10px;
+        bottom: 26%;
+    }
+
+    .modal__container--list{
+        width: 50%;
+    }
+
+    .modal__container--share{
+        display: none;
+    }
+
+   /*  .triangle{
+        display: block;
+        clip-path: polygon(49% 45%, 0 0, 100% 0);
+        background-color: var(--DarkGrayishBlue);
+        position: absolute;
+        bottom: -29px;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+    }
+ */
+    .black{
+        background-color: var(--DarkGrayishBlue);
+    }
+}

@@ -1,0 +1,33 @@
+@import url(./mobile.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+
+
+:root{
+
+    /* MAIN COLORS */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+
+    /* NEUTRAL COLORS */
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;    
+}
